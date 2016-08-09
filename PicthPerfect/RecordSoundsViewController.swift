@@ -23,12 +23,13 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.layer.contents = UIImage(named: "blurry_wallpaper_recording.jpeg")?.CGImage
         tapToRecord.adjustsFontSizeToFitWidth = true
     }
     
     
     @IBAction func startRecording(sender: AnyObject) {
-        tapToRecord.text = "Recording in Process"
+        tapToRecord.text = "Recording in Process..."
         startRecording.enabled = false
         stopRecording.enabled = true
         pauseRecording.enabled = true
@@ -75,9 +76,10 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "stopRecording"{
-            let PlaySoundVC = segue.destinationViewController as! PlaySoundsViewController
+            let nav = segue.destinationViewController as! UINavigationController
+            let vc = nav.viewControllers[0] as! PlaySoundsViewController
             let recordedAudioURL = sender as! NSURL
-            PlaySoundVC.recordedAudioURL = recordedAudioURL
+            vc.recordedAudioURL = recordedAudioURL
         }
     }
     override func viewWillAppear(animated: Bool) {

@@ -51,6 +51,7 @@ class PlaySoundsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.layer.contents = UIImage(named: "blurry_wallpaper.jpg")?.CGImage
         setupAudio()
         // Do any additional setup after loading the view.
     }
@@ -64,6 +65,10 @@ class PlaySoundsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
+    @IBAction func doneButtonPressed(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

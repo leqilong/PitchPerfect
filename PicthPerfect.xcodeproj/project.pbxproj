@@ -16,6 +16,8 @@
 		1004CF7D1CFAA45300FDF5C7 /* PlaySoundsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004CF7C1CFAA45300FDF5C7 /* PlaySoundsViewController.swift */; };
 		1004CF7F1CFADF6600FDF5C7 /* PlaySoundsViewController+Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004CF7E1CFADF6600FDF5C7 /* PlaySoundsViewController+Audio.swift */; };
 		1004CF811CFBE05900FDF5C7 /* RecordedAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1004CF801CFBE05900FDF5C7 /* RecordedAudio.swift */; };
+		108F3BE11D59D09700CF6271 /* blurry_wallpaper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 108F3BE01D59D09700CF6271 /* blurry_wallpaper.jpg */; };
+		108F3BE31D59D09E00CF6271 /* blurry_wallpaper_recording.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 108F3BE21D59D09E00CF6271 /* blurry_wallpaper_recording.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		1004CF7C1CFAA45300FDF5C7 /* PlaySoundsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaySoundsViewController.swift; path = ../PlaySoundsViewController.swift; sourceTree = "<group>"; };
 		1004CF7E1CFADF6600FDF5C7 /* PlaySoundsViewController+Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlaySoundsViewController+Audio.swift"; sourceTree = "<group>"; };
 		1004CF801CFBE05900FDF5C7 /* RecordedAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordedAudio.swift; sourceTree = "<group>"; };
+		108F3BE01D59D09700CF6271 /* blurry_wallpaper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blurry_wallpaper.jpg; sourceTree = "<group>"; };
+		108F3BE21D59D09E00CF6271 /* blurry_wallpaper_recording.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blurry_wallpaper_recording.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 		1004CF7B1CFA54F600FDF5C7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				108F3BE01D59D09700CF6271 /* blurry_wallpaper.jpg */,
+				108F3BE21D59D09E00CF6271 /* blurry_wallpaper_recording.jpeg */,
 				1004CF4D1CFA54ED00FDF5C7 /* AppDelegate.swift */,
 				1004CF541CFA54ED00FDF5C7 /* Assets.xcassets */,
 				1004CF591CFA54ED00FDF5C7 /* Info.plist */,
@@ -245,6 +251,8 @@
 			files = (
 				1004CF551CFA54ED00FDF5C7 /* Assets.xcassets in Resources */,
 				1004CF531CFA54ED00FDF5C7 /* Main.storyboard in Resources */,
+				108F3BE31D59D09E00CF6271 /* blurry_wallpaper_recording.jpeg in Resources */,
+				108F3BE11D59D09700CF6271 /* blurry_wallpaper.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
